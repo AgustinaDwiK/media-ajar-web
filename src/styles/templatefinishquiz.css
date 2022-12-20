@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "./app.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-body);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.quiz-container {
+    padding: 4em;
+}
+
+.quiz-container h1 {
+    font-weight: var(--text-semibold);
+}
+
+.quiz-instruction {
+    margin-top: 40px;
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+}
+
+.quiz-btn {
+    position: absolute;
+    right: 45%;
+    margin-top: 50px;
+}
+
+.grade-container {
+    padding: 4em;
+    color: var(--neutral-500);
+}
+
+table {
+    width: 100%;
+    margin: 4em 0;
+ }
+
+ tr {
+    border-bottom: 2px solid var(--neutral-400);
+ }
+
+ th {
+    padding: 15px 20px;
+    text-align: center;
+    background-color: var(--neutral-300);
+    font-size: var(--text-paragraph);
+    color: var(--neutral-900);
+ }
+
+ tbody {
+    background-color: var(--neutral-100);
+    border: 2px solid var(--neutral-100);
+ }
+
+ td {
+    border-bottom: 2px solid var(--neutral-400);
+    padding: 15px 20px;
+    width: 50%;
+    font-size: var(--text-paragraph-sm);
+    font-weight: var(--text-medium);
+    color: var(--neutral-900);
+    text-align: center;
+ }
+
+ .status.success {
+    width: 40%;
+    padding: 10px 30px;
+    border-radius: 6px;
+    background-color: var(--success);
+    margin: 0 auto;
+    color: var(--neutral-100);
+ }
+
+ .status.fail {
+    width: 40%;
+    padding: 10px 30px;
+    border-radius: 6px;
+    background-color: var(--danger);
+    margin: 0 auto;
+    color: var(--neutral-100);
+ }
+
+/* Start : Pagination */
+.pagination {
+    display: flex;
+    padding: 1.5em 4em;
+    background-color: var(--neutral-200);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-previous {
+    border-radius: var(--rounded-m);
+    padding: 8px 15px;
+}
+
+.btn-next {
+    border-radius: var(--rounded-m);
+    padding: 8px 15px;
+}
+/* End : Pagination */

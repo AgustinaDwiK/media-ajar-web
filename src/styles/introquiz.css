@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "./app.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-body);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.quiz-container {
+    padding: 4em;
+}
+
+.quiz-container h1 {
+    font-weight: var(--text-semibold);
+}
+
+.quiz-instruction {
+    margin-top: 40px;
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+}
+
+.quiz-btn {
+    position: absolute;
+    right: 45%;
+    margin-top: 50px;
+}
+
+/* Start : Pagination */
+.pagination {
+    display: flex;
+    padding: 1.5em 4em;
+    background-color: var(--neutral-200);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-previous {
+    border-radius: var(--rounded-m);
+    padding: 8px 15px;
+}
+
+.btn-next {
+    border-radius: var(--rounded-m);
+    padding: 8px 15px;
+}
+/* End : Pagination */
